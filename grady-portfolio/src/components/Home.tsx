@@ -3,10 +3,10 @@ import Container from "react-bootstrap/Container";
 import styled from "styled-components";
 import pfp from "../images/grady_headshot.jpeg";
 
-const StyledContainer = styled(Col)`
-  padding: 0;
+const StyledContainer = styled(Container)`
+  padding-top: 5vh;
   margin: 0 auto;
-  min-height: calc(100vh - 56px);
+  min-height: calc(100vh - 100px);
 
   @media (max-width: 576px) {
     margin: 0 auto 75px 0;
@@ -14,44 +14,30 @@ const StyledContainer = styled(Col)`
   }
 `;
 
-const StyledContent = styled(Row)`
-  padding-top: 23vh;
-  margin: 0 auto;
-
+const StyledPfp = styled.img`
+  border-radius: 50px;
+  width: 100%;
+  justify-content: center;
   @media (max-width: 576px) {
-    padding-top: 0px;
+    margin: 0 auto 75px 0;
+    min-height: null;
   }
-`;
-
-const StyledName = styled(Row)`
-  padding-left: 10vh;
-  margin: 0 auto;
-  font-size: 60px;
-  line-height: 1.5;
-`;
-
-const StyledTitle = styled.h1`
-  margin: 0;
-  font-size: 75px;
-  line-height: 1.5;
-  text-align: center;
 `;
 
 function Home() {
   return (
     <StyledContainer>
-      <StyledContent>
+      <Row>
         <Col md={8}>
-          <StyledName>
+          <Row style={{ fontSize: 30 }}>
             Hi! My name is Grady and I'm a second-year computer science student
             at Yale.
-          </StyledName>
+          </Row>
         </Col>
         <Col md={4} style={{ minHeight: "200px" }}>
-          {" "}
-          <img src={pfp} style={{ borderRadius: 50 }}></img>
+          <StyledPfp src={pfp}></StyledPfp>
         </Col>
-      </StyledContent>
+      </Row>
     </StyledContainer>
   );
 }
