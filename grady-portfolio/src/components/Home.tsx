@@ -1,43 +1,52 @@
-import { Row, Col } from "react-bootstrap";
+import React from "react";
 import Container from "react-bootstrap/Container";
+import Typewriter from "react-typewriter-effect";
 import styled from "styled-components";
-import pfp from "../images/grady_headshot.jpeg";
+
+// const StyledContainer = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh; /* Full viewport height */
+//   margin: 0;
+//   color: #333;
+//   background-color: #f0ffff;
+//   overflow: hidden;
+// `;
 
 const StyledContainer = styled(Container)`
-  padding-top: 5vh;
   margin: 0 auto;
-  min-height: calc(100vh - 100px);
+  max-width: 1000px;
+  justify-content: center;
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  color: #333;
+  align-items: center;
+  text-align: center; /* Center text within the container */
 
   @media (max-width: 576px) {
     margin: 0 auto 75px 0;
-    min-height: null;
+    min-height: unset;
   }
 `;
 
-const StyledPfp = styled.img`
-  border-radius: 50px;
-  width: 100%;
-  justify-content: center;
-  @media (max-width: 576px) {
-    margin: 0 auto 75px 0;
-    min-height: null;
-  }
+const Title = styled.h1`
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
 `;
 
 function Home() {
   return (
     <StyledContainer>
-      <Row>
-        <Col md={8}>
-          <Row style={{ fontSize: 30 }}>
-            Hi! My name is Grady and I'm a second-year computer science student
-            at Yale.
-          </Row>
-        </Col>
-        <Col md={4} style={{ minHeight: "200px" }}>
-          <StyledPfp src={pfp}></StyledPfp>
-        </Col>
-      </Row>
+      <Title>
+        <Typewriter
+          text="Welcome to Grady's personal website :)"
+          cursorColor="#000" // Cursor color
+          typeSpeed={100} // Speed of typing (in ms)
+          delay={1000} // Delay before typing starts (in ms)
+        />
+      </Title>
     </StyledContainer>
   );
 }
