@@ -12,7 +12,7 @@ type NavBarProps = {
 const CustomNavbar = styled(Navbar)`
   position: fixed;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.9);
   z-index: 100;
 `;
 
@@ -32,7 +32,7 @@ const RightNav = styled(Nav)`
 
 const NavBar: React.FC<NavBarProps> = ({ scrollToAbout, scrollToProjects }) => {
   return (
-    <CustomNavbar expand="lg">
+    <CustomNavbar expand="sm">
       <CenteredContainer>
         <Navbar.Brand href="/">ragyudy</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

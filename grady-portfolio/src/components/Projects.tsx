@@ -6,7 +6,7 @@ const StyledContainer = styled(Container)`
   padding-top: 10vh;
   margin: 0 auto;
   max-width: 1000px;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -8,7 +8,7 @@ const StyledContainer = styled(Container)`
   padding-top: 10vh;
   margin: 0 auto;
   max-width: 1000px;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,8 +66,8 @@ const About = React.forwardRef<HTMLDivElement>((props, ref) => {
       <SubText>
         <em>
           Seeking opportunities in software engineering, machine learning, and
-          data science. Also interested in exploring more the intersection
-          between CS and animation.
+          data science. Interested in exploring computer graphics and the
+          intersection between CS and animation.
         </em>
       </SubText>
       <Row>
@@ -76,13 +76,8 @@ const About = React.forwardRef<HTMLDivElement>((props, ref) => {
         </ImageCol>
         <Col md={6}>
           <IntroText>
-            Hi, I'm Grady! I'm a sophomore at Yale studying Computer Science. I
-            have research experience from working in multiple CS labs throughout
-            high school and college and am currently looking for tech
-            internships for Summer 2025.
-          </IntroText>
-          <IntroText>
-            I'm currently a student researcher at the{" "}
+            Hi, I'm Grady, a sophomore at Yale studying Computer Science. I'm
+            currently a student researcher at the{" "}
             <StyledLink href="https://vision.cs.yale.edu/">
               Yale Vision Laboratory
             </StyledLink>
@@ -95,8 +90,13 @@ const About = React.forwardRef<HTMLDivElement>((props, ref) => {
             <StyledLink href="https://yhack.org/">YHack</StyledLink>.
           </IntroText>
           <IntroText>
-            In my free time, I enjoy playing badminton, practicing guitar, and
-            working on side projects. I'm always looking for opportunities to
+            When I'm not programming, you'll likely find me playing badminton
+            with the{" "}
+            <StyledLink href="https://www.instagram.com/yalebadminton/">
+              Yale Badminton Team
+            </StyledLink>
+            , practicing fingerstyle guitar in my suite, or working on side
+            projects with friends. I'm always excited for new opportunities to
             learn and grow!
           </IntroText>
         </Col>
