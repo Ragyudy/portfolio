@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import BackgroundContainer from "./components/Background";
 
 function App() {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -24,6 +25,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
+      <BackgroundContainer />
       <NavBar
         scrollToAbout={scrollToAbout}
         scrollToProjects={scrollToProjects}

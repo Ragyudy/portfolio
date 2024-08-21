@@ -12,8 +12,8 @@ type NavBarProps = {
 const CustomNavbar = styled(Navbar)`
   position: fixed;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.75);
+  z-index: 100;
 `;
 
 const CenteredContainer = styled(Container)`
@@ -39,8 +39,6 @@ const NavBar: React.FC<NavBarProps> = ({ scrollToAbout, scrollToProjects }) => {
         <Navbar.Collapse id="basic-navbar-nav">
           <RightNav>
             <Nav.Link onClick={scrollToAbout}>About</Nav.Link>
-            {/* <Nav.Link href="#education">Education</Nav.Link> */}
-            {/* <Nav.Link href="#experience">Experience</Nav.Link> */}
             <Nav.Link onClick={scrollToProjects}>Projects</Nav.Link>
             <Nav.Link href="https://linkedin.com/in/gradyyu">LinkedIn</Nav.Link>
           </RightNav>
