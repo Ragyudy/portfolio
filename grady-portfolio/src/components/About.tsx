@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Row, Col } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import styled from "styled-components";
@@ -26,11 +26,11 @@ const Header = styled.h3`
   color: #333;
 `;
 
-// const SubText = styled.p`
-//   font-size: 1.2em;
-//   font-style: italic;
-//   margin-bottom: 40px;
-// `;
+const SubText = styled.p`
+  font-size: 1.2em;
+  font-style: italic;
+  margin-bottom: 40px;
+`;
 
 const ImageCol = styled(Col)`
   display: flex;
@@ -41,7 +41,7 @@ const ImageCol = styled(Col)`
 const StyledPfp = styled.img`
   border-radius: 2%;
   width: 100%;
-  max-width: 450px; /* Adjust to match the example */
+  max-width: 55vh; /* Adjust to match pfp */
   height: auto;
 `;
 
@@ -59,25 +59,27 @@ const StyledLink = styled.a`
   text-decoration: none;
 `;
 
-function About() {
+const About = React.forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <StyledContainer id="about">
+    <StyledContainer id="about" ref={ref}>
       <Header>ABOUT ME</Header>
-      {/* <SubText>
+      <SubText>
         <em>
-          Seeking opportunities in software development, machine learning, and
-          data science
+          Seeking opportunities in software engineering, machine learning, and
+          data science. Also interested in exploring more the intersection
+          between CS and animation.
         </em>
-      </SubText> */}
+      </SubText>
       <Row>
         <ImageCol md={6}>
           <StyledPfp src={pfp} alt="Grady's headshot" />
         </ImageCol>
         <Col md={6}>
           <IntroText>
-            Hi, I'm Grady! I'm a sophomore at Yale studying Computer Science.
-            I'm interested in software development, machine learning, and data
-            science.
+            Hi, I'm Grady! I'm a sophomore at Yale studying Computer Science. I
+            have research experience from working in multiple CS labs throughout
+            high school and college and am currently looking for tech
+            internships for Summer 2025.
           </IntroText>
           <IntroText>
             I'm currently a student researcher at the{" "}
@@ -94,13 +96,13 @@ function About() {
           </IntroText>
           <IntroText>
             In my free time, I enjoy playing badminton, practicing guitar, and
-            working on side projects. I am currently looking for tech
-            internships for Summer 2025.
+            working on side projects. I'm always looking for opportunities to
+            learn and grow!
           </IntroText>
         </Col>
       </Row>
     </StyledContainer>
   );
-}
+});
 
 export default About;

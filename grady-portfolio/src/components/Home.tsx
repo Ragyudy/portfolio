@@ -3,26 +3,15 @@ import Container from "react-bootstrap/Container";
 import Typewriter from "react-typewriter-effect";
 import styled from "styled-components";
 
-// const StyledContainer = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   height: 100vh; /* Full viewport height */
-//   margin: 0;
-//   color: #333;
-//   background-color: #f0ffff;
-//   overflow: hidden;
-// `;
-
 const StyledContainer = styled(Container)`
   margin: 0 auto;
   max-width: 1000px;
   justify-content: center;
   display: flex;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   color: #333;
   align-items: center;
-  text-align: center; /* Center text within the container */
+  text-align: center;
 
   @media (max-width: 576px) {
     margin: 0 auto 75px 0;
@@ -42,9 +31,9 @@ function Home() {
       <Title>
         <Typewriter
           text="Welcome to Grady's personal website :)"
-          cursorColor="#000" // Cursor color
-          typeSpeed={100} // Speed of typing (in ms)
-          delay={1000} // Delay before typing starts (in ms)
+          cursorColor="#000"
+          typeSpeed={100}
+          delay={1000}
         />
       </Title>
     </StyledContainer>
