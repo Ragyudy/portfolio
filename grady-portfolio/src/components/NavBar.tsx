@@ -10,9 +10,8 @@ type NavBarProps = {
 };
 
 const CustomNavbar = styled(Navbar)`
-  position: fixed;
+  position: absolute;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
   z-index: 100;
 `;
 
@@ -31,15 +30,32 @@ const RightNav = styled(Nav)`
 `;
 
 const NavBar: React.FC<NavBarProps> = ({ scrollToAbout, scrollToProjects }) => {
+  const [expanded, setExpanded] = useState(false);
+  const handleToggle = () => {
+    setExpanded(!expanded);
+  };
+
+  const handleNavClick = (callback: () => void) => {
+    callback();
+    setExpanded(false);
+  };
+
   return (
-    <CustomNavbar expand="sm">
+    <CustomNavbar expanded={expanded} expand="sm">
       <CenteredContainer>
         <Navbar.Brand href="/">ragyudy</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          onClick={handleToggle}
+        />
         <Navbar.Collapse id="basic-navbar-nav">
           <RightNav>
-            <Nav.Link onClick={scrollToAbout}>About</Nav.Link>
-            <Nav.Link onClick={scrollToProjects}>Projects</Nav.Link>
+            <Nav.Link onClick={() => handleNavClick(scrollToAbout)}>
+              About
+            </Nav.Link>
+            <Nav.Link onClick={() => handleNavClick(scrollToProjects)}>
+              Projects
+            </Nav.Link>
             <Nav.Link href="https://linkedin.com/in/gradyyu">LinkedIn</Nav.Link>
           </RightNav>
         </Navbar.Collapse>

@@ -12,10 +12,11 @@ const StyledContainer = styled(Container)`
   color: #333;
   align-items: center;
   text-align: center;
+  position: relative;
 
   @media (max-width: 576px) {
     margin: 0 auto 75px 0;
-    min-height: unset;
+    min-height: 100vh;
   }
 `;
 
@@ -25,7 +26,11 @@ const Title = styled.h1`
   text-align: center;
 `;
 
-function Home() {
+type HomeProps = {
+  scrollToAbout: () => void;
+};
+
+const Home: React.FC<HomeProps> = ({ scrollToAbout }) => {
   return (
     <StyledContainer>
       <Title>
@@ -38,6 +43,6 @@ function Home() {
       </Title>
     </StyledContainer>
   );
-}
+};
 
 export default Home;
