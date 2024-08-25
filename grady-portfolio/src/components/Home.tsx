@@ -23,7 +23,7 @@ const Title = styled.h1`
   font-size: 12em;
   font-weight: bold;
   text-align: center;
-  font-family: "meatloaf";
+  font-family: "sans-serif";
   letter-spacing: 0.1em;
   color: #00356b;
   transition: color 0.5s ease;
