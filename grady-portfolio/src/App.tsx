@@ -30,7 +30,7 @@ function App() {
         scrollToAbout={scrollToAbout}
         scrollToProjects={scrollToProjects}
       />
-      <Home scrollToAbout={scrollToAbout} />
+      <Home />
       <About ref={aboutRef} />
       <Projects ref={projectsRef} />
     </>

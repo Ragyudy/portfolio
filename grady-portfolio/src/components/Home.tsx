@@ -1,6 +1,5 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import Typewriter from "react-typewriter-effect";
 import styled from "styled-components";
 
 const StyledContainer = styled(Container)`
@@ -21,26 +20,29 @@ const StyledContainer = styled(Container)`
 `;
 
 const Title = styled.h1`
-  font-size: 3em;
+  font-size: 12em;
   font-weight: bold;
   text-align: center;
+  font-family: "meatloaf";
+  letter-spacing: 0.1em;
+  color: #00356b;
+  transition: color 0.5s ease;
+
+  &:hover {
+    color: #286dc0;
+  }
+
+  // phone
+  @media (max-width: 576px) {
+    font-size: 7.9em;
+    word-break: break-word;
+  }
 `;
 
-type HomeProps = {
-  scrollToAbout: () => void;
-};
-
-const Home: React.FC<HomeProps> = ({ scrollToAbout }) => {
+const Home = () => {
   return (
     <StyledContainer>
-      <Title>
-        <Typewriter
-          text="Welcome to Grady's personal website :)"
-          cursorColor="#000"
-          typeSpeed={100}
-          delay={1000}
-        />
-      </Title>
+      <Title>Grady Yu</Title>
     </StyledContainer>
   );
 };
