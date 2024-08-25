@@ -6,7 +6,7 @@ const BackgroundContainer = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("src/assets/images/cherry_blossom_landscape.jpg");
+  background-image: url("/cherry_blossom_landscape.jpg");
   background-size: cover;
   background-position: center;
   z-index: -1;

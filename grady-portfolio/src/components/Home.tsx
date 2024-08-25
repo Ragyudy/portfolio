@@ -20,7 +20,7 @@ const StyledContainer = styled(Container)`
 `;
 
 const Title = styled.h1`
-  font-size: 12em;
+  font-size: 10em;
   font-weight: bold;
   text-align: center;
   font-family: "sans-serif";
@@ -34,7 +34,7 @@ const Title = styled.h1`
 
   // phone
   @media (max-width: 576px) {
-    font-size: 7.9em;
+    font-size: 5.5em;
     word-break: break-word;
   }
 `;
