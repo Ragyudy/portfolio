@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { Row, Col } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import styled from "styled-components";
-import pfp from "/images/grady_headshot2.jpeg";
+import pfp from "../assets/images/grady_headshot2.jpeg";
 
 const StyledContainer = styled(Container)`
   padding-top: 10vh;

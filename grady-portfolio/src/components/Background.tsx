@@ -6,7 +6,7 @@ const BackgroundContainer = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/images/calm_anime_background.jpg");
+  background-image: url("src/assets/images/cherry_blossom_landscape.jpg");
   background-size: cover;
   background-position: center;
   z-index: -1;
