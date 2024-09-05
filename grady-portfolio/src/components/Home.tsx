@@ -20,22 +20,15 @@ const StyledContainer = styled(Container)`
 `;
 
 const Title = styled.h1`
-  font-size: 10em;
-  font-weight: bold;
+  font-family: "SofiaProBold", sans-serif;
+  font-size: 6em;
+  letter-spacing: 14px;
   text-align: center;
-  font-family: "sans-serif";
-  letter-spacing: 0.1em;
   color: #00356b;
   transition: color 0.5s ease;
 
   &:hover {
     color: #286dc0;
-  }
-
-  // phone
-  @media (max-width: 576px) {
-    font-size: 5.5em;
-    word-break: break-word;
   }
 `;
 

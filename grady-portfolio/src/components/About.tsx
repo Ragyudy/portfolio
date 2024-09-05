@@ -46,8 +46,9 @@ const StyledPfp = styled.img`
 `;
 
 const IntroText = styled.p`
-  font-size: 1.2em;
-  line-height: 1.6;
+  font-family: "garamond", courier;
+  font-size: 1.1em;
+  line-height: 1.7;
   color: #555;
   text-align: left;
   margin-top: 0.5rem;
