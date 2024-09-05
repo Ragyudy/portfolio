@@ -3,36 +3,36 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'Garamond';
-    src: url('src/assets/fonts/Garamond/Garamond.eot');
-    src: url('src/assets/fonts/Garamond/Garamond.woff2') format('woff2'),
-      url('src/assets/fonts/Garamond/Garamond.woff') format('woff'),
-      url('src/assets/fonts/Garamond/Garamond.ttf') format('truetype'),
-      url('src/assets/fonts/Garamond/Garamond.svg#Garamond') format('svg'),
-      url('src/assets/fonts/Garamond/Garamond.eot?#iefix') format('embedded-opentype');
+    src: url('/fonts/Garamond/Garamond.eot');
+    src: url('/fonts/Garamond/Garamond.woff2') format('woff2'),
+      url('/fonts/Garamond/Garamond.woff') format('woff'),
+      url('/fonts/Garamond/Garamond.ttf') format('truetype'),
+      url('/fonts/Garamond/Garamond.svg#Garamond') format('svg'),
+      url('/fonts/Garamond/Garamond.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'SofiaProBold';
-    src: url('src/assets/fonts/SofiaProBold/SofiaProBold.eot');
-    src: url('src/assets/fonts/SofiaProBold/SofiaProBold.woff2') format('woff2'),
-      url('src/assets/fonts/SofiaProBold/SofiaProBold.woff') format('woff'),
-      url('src/assets/fonts/SofiaProBold/SofiaProBold.ttf') format('truetype'),
-      url('src/assets/fonts/SofiaProBold/SofiaProBold.svg#SofiaProBold') format('svg'),
-      url('src/assets/fonts/SofiaProBold/SofiaProBold.eot?#iefix') format('embedded-opentype');
+    src: url('/fonts/SofiaProBold/SofiaProBold.eot');
+    src: url('/fonts/SofiaProBold/SofiaProBold.woff2') format('woff2'),
+      url('/fonts/SofiaProBold/SofiaProBold.woff') format('woff'),
+      url('/fonts/SofiaProBold/SofiaProBold.ttf') format('truetype'),
+      url('/fonts/SofiaProBold/SofiaProBold.svg#SofiaProBold') format('svg'),
+      url('/fonts/SofiaProBold/SofiaProBold.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'SofiaProMedium';
-    src: url('src/assets/fonts/SofiaProMedium/SofiaProMedium.eot');
-    src: url('src/assets/fonts/SofiaProMedium/SofiaProMedium.woff2') format('woff2'),
-      url('src/assets/fonts/SofiaProMedium/SofiaProMedium.woff') format('woff'),
-      url('src/assets/fonts/SofiaProMedium/SofiaProMedium.ttf') format('truetype'),
-      url('src/assets/fonts/SofiaProMedium/SofiaProMedium.svg#SofiaProMedium') format('svg'),
-      url('src/assets/fonts/SofiaProMedium/SofiaProMedium.eot?#iefix') format('embedded-opentype');
+    src: url('/fonts/SofiaProMedium/SofiaProMedium.eot');
+    src: url('/fonts/SofiaProMedium/SofiaProMedium.woff2') format('woff2'),
+      url('/fonts/SofiaProMedium/SofiaProMedium.woff') format('woff'),
+      url('/fonts/SofiaProMedium/SofiaProMedium.ttf') format('truetype'),
+      url('/fonts/SofiaProMedium/SofiaProMedium.svg#SofiaProMedium') format('svg'),
+      url('/fonts/SofiaProMedium/SofiaProMedium.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
   }

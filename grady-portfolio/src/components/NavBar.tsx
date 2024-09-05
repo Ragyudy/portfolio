@@ -14,13 +14,13 @@ const CustomNavbar = styled(Navbar)`
   width: 100%;
   z-index: 100;
   margin: 0 auto;
-  justify-content: space-between;
+  padding: 10px 8px;
   display: flex;
 `;
 
 const CustomNavbarToggle = styled(Navbar.Toggle)`
   border: none;
-  padding: 8px 15px;
+  // padding: 8px 15px;
   margin-left: auto;
   &:focus {
     outline: none;
@@ -28,13 +28,13 @@ const CustomNavbarToggle = styled(Navbar.Toggle)`
   }
 `;
 
-const CenteredContainer = styled(Container)`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  // max-width: 1000px;
-  margin: 0 auto;
-`;
+// const CenteredContainer = styled(Container)`
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   // max-width: 1000px;
+//   margin: 0 auto;
+// `;
 
 const RightNav = styled(Nav)`
   display: flex;

@@ -65,7 +65,7 @@ const About = React.forwardRef<HTMLDivElement>((props, ref) => {
     <StyledContainer id="about" ref={ref}>
       <Header>ABOUT ME</Header>
       <SubText>
-        <em>
+        <em style={{ letterSpacing: "1.2px" }}>
           Seeking opportunities in software engineering, machine learning, and
           data science. Interested in exploring computer graphics and the
           intersection between CS and animation.
