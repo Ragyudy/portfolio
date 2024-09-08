@@ -21,7 +21,7 @@ const CustomNavbar = styled(Navbar)`
 const CustomNavbarToggle = styled(Navbar.Toggle)`
   border: none;
   // padding: 8px 15px;
-  margin-left: auto;
+  margin-right: auto;
   &:focus {
     outline: none;
     box-shadow: none;
@@ -39,7 +39,7 @@ const CustomNavbarToggle = styled(Navbar.Toggle)`
 const RightNav = styled(Nav)`
   display: flex;
   align-items: center;
-  margin-left: auto;
+  margin-right: auto;
 `;
 
 const CustomNavLink = styled(Nav.Link)`
@@ -56,10 +56,10 @@ const CustomNavLink = styled(Nav.Link)`
     content: "";
     position: absolute;
     width: 0;
-    height: 2px;
+    height: 1px;
     bottom: 0;
     left: 0;
-    background-color: black; /* Set the color of the underline */
+    background-color: black;
     transition: width 0.3s ease;
   }
 

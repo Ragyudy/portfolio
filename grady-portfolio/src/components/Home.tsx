@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import styled from "styled-components";
 
@@ -21,22 +21,55 @@ const StyledContainer = styled(Container)`
 
 const Title = styled.h1`
   font-family: "SofiaProBold", sans-serif;
-  font-size: 6em;
+  font-size: 4.5em;
   letter-spacing: 14px;
   text-align: center;
-  color: #00356b;
   transition: color 0.5s ease;
+`;
 
-  &:hover {
-    color: #286dc0;
-  }
+const BackgroundDiv = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%; /* Use left: 50% to center horizontally */
+  width: 40vw;
+  height: 30vw;
+  background-color: #93aaff;
+  z-index: -99;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center both horizontally and vertically */
 `;
 
 const Home = () => {
+  const [text, setText] = useState("");
+  const fullText = "Grady Yu";
+
+  useEffect(() => {
+    let index = 0;
+    const timer = setTimeout(() => {
+      const typingInterval = setInterval(() => {
+        if (index < fullText.length) {
+          setText(fullText.slice(0, index + 1));
+          index++;
+        } else {
+          clearInterval(typingInterval);
+        }
+      }, 100); // Adjust this value to change typing speed
+
+      return () => clearInterval(typingInterval);
+    }, 250); // 1 second delay before typing starts
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <StyledContainer>
-      <Title>Grady Yu</Title>
-    </StyledContainer>
+    <>
+      <BackgroundDiv />
+      <StyledContainer>
+        <Title>{text}</Title>
+      </StyledContainer>
+    </>
   );
 };
 
