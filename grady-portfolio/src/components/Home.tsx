@@ -27,19 +27,19 @@ const Title = styled.h1`
   transition: color 0.5s ease;
 `;
 
-const BackgroundDiv = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%; /* Use left: 50% to center horizontally */
-  width: 40vw;
-  height: 30vw;
-  background-color: #93aaff;
-  z-index: -99;
-  transform: translate(
-    -50%,
-    -50%
-  ); /* Center both horizontally and vertically */
-`;
+// const BackgroundDiv = styled.div`
+//   position: absolute;
+//   top: 50%;
+//   left: 50%; /* Use left: 50% to center horizontally */
+//   width: 40vw;
+//   height: 30vw;
+//   background-color: #93aaff;
+//   z-index: -99;
+//   transform: translate(
+//     -50%,
+//     -50%
+//   ); /* Center both horizontally and vertically */
+// `;
 
 const Home = () => {
   const [text, setText] = useState("");
@@ -65,7 +65,7 @@ const Home = () => {
 
   return (
     <>
-      <BackgroundDiv />
+      {/* <BackgroundDiv /> */}
       <StyledContainer>
         <Title>{text}</Title>
       </StyledContainer>

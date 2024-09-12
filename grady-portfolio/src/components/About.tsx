@@ -21,28 +21,28 @@ const StyledContainer = styled(Container)`
   }
 `;
 
-const BackgroundDiv = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-110%, -55%);
-  width: 80%;
-  height: 60%;
-  background-color: #93aaff;
-  opacity: 0.3;
-  z-index: -1;
-  border-radius: 20px;
+// const BackgroundDiv = styled.div`
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-110%, -55%);
+//   width: 80%;
+//   height: 60%;
+//   background-color: #93aaff;
+//   opacity: 0.3;
+//   z-index: -1;
+//   border-radius: 20px;
 
-  @media (max-width: 768px) {
-    width: 90%;
-    height: 90%;
-  }
+//   @media (max-width: 768px) {
+//     width: 90%;
+//     height: 90%;
+//   }
 
-  @media (max-width: 576px) {
-    width: 95%;
-    height: 95%;
-  }
-`;
+//   @media (max-width: 576px) {
+//     width: 95%;
+//     height: 95%;
+//   }
+// `;
 
 const Header = styled.h3`
   margin-bottom: 30px;
@@ -87,7 +87,7 @@ const StyledLink = styled.a`
 const About = React.forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <StyledContainer id="about" ref={ref}>
-      <BackgroundDiv />
+      {/* <BackgroundDiv /> */}
       <Header>ABOUT ME</Header>
       <SubText>
         <em style={{ letterSpacing: "1.2px" }}>
