@@ -23,11 +23,6 @@ const Header = styled.h3`
   color: #333;
 `;
 
-const Note = styled.p`
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-`;
-
 const StyledLink = styled.a`
   color: #007bff;
   text-decoration: none;
@@ -37,22 +32,19 @@ const Projects = React.forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <StyledContainer id="projects" ref={ref}>
       <Header>PROJECTS</Header>
-      <p style={{ color: "gray" }}>Coming soon...</p>
-      <Note>
+      <p style={{ color: "#4A4A4A" }}>more details coming soon...</p>
+      <p>
         Currently building a{" "}
-        <StyledLink href="https://www.instagram.com/handsomedanyale/?hl=en">
-          Handsome Dan
-        </StyledLink>{" "}
-        tracker with a couple of friends.
-      </Note>
-      <Note>
-        Also making the new official website for the{" "}
-        <StyledLink href="https://yalebadminton.netlify.app">
-          {" "}
-          Yale Badminton Club
+        <StyledLink href="https://github.com/Ragyudy/handsome-dan-tracker">
+          Handsome Dan Tracker
         </StyledLink>
         .
-      </Note>
+      </p>
+      <p>
+        Also making a new official website for{" "}
+        <StyledLink href="https://yalebadminton.com">Yale Badminton</StyledLink>
+        .
+      </p>
     </StyledContainer>
   );
 });
