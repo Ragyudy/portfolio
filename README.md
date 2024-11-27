@@ -11,8 +11,7 @@ hii :)
 
 ## To-dos:
 
-- update project descriptions
-- add skills to about page + update about description
+- add skills to about page
 - make nav links responsive (stays light blue when clicked)
 - add demo reel
 - add links (email, github, linkedin, etc.)

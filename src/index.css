@@ -12,6 +12,15 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  color: #597cff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d3e7ff;
+}
+
 .home {
   display: flex;
   flex-direction: column;
@@ -58,11 +67,10 @@ html {
   width: 100%;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid #ccc;
+  /* border-bottom: 1px solid #333; */
   background-color: white;
   z-index: 10;
   padding-top: 12px;
-  padding-bottom: 10px;
 }
 
 .navbar-list {
@@ -185,25 +193,6 @@ html {
   margin: 0 0 10px 0;
   font-size: 1.1rem;
 }
-
-.about-description a {
-  color: #597cff;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #d3e7ff;
-}
-
-/* @media (max-width: 1100px) {
-  .about-photo {
-    display: none;
-  }
-  .about-description {
-    flex: 1;
-    padding: 0 20px;
-  }
-} */
 
 /* ------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------ PROJECTS --------------------------------------------- */
@@ -332,6 +321,10 @@ a:hover {
   transition: color 0.3s ease;
 }
 
+.toggle-icon:hover {
+  color: #597cff;
+}
+
 /* ------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------- DARK MODE THEME ------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------- */
@@ -372,15 +365,15 @@ body.dark-mode .modal-link:hover {
 }
 
 /* About Section */
-body.dark-mode .about-description {
+body.dark-mode p {
   color: #d8d8d8;
 }
 
-body.dark-mode .about-description a {
+body.dark-mode a {
   color: #bfc2ff;
 }
 
-body.dark-mode .about-description a:hover {
+body.dark-mode a:hover {
   color: #597cff;
 }
 
@@ -398,10 +391,14 @@ body.dark-mode .toggle-icon {
   color: #d8d8d8;
 }
 
+body.dark-mode .toggle-icon:hover {
+  color: #597cff;
+}
+
 body.dark-mode .hamburger-bar {
-  background-color: #bfc2ff;
+  background-color: #d8d8d8;
 }
 
 body.dark-mode .close-modal {
-  color: #bfc2ff;
+  color: #d8d8d8;
 }
