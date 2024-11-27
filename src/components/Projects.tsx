@@ -1,3 +1,7 @@
+import yaleClubsImg from "../assets/projects/img/yaleclubs.png";
+import handsomeDanImg from "../assets/projects/img/handsomedan.png";
+import yaleBadmintonImg from "../assets/projects/img/yalebadminton.png";
+
 export function Projects() {
   return (
     <div className="section-container">
@@ -6,11 +10,7 @@ export function Projects() {
       </div>
       <div className="project-row">
         <a href="https://yaleclubs.info">
-          <img
-            src="src/assets/projects/img/yaleclubs.png"
-            alt="Yale Clubs"
-            className="project-img"
-          />
+          <img src={yaleClubsImg} alt="Yale Clubs" className="project-img" />
         </a>
         <div className="project-description">
           <a href="https://yaleclubs.info">
@@ -37,7 +37,7 @@ export function Projects() {
       <div className="project-row">
         <a href="https://github.com/Ragyudy/handsome-dan-tracker">
           <img
-            src="src/assets/projects/img/handsomedan.png"
+            src={handsomeDanImg}
             alt="Handsome Dan Tracker"
             className="project-img"
           />
@@ -94,7 +94,7 @@ export function Projects() {
       <div className="project-row">
         <a href="https://yalebadminton.com">
           <img
-            src="src/assets/projects/img/yalebadminton.png"
+            src={yaleBadmintonImg}
             alt="Yale Badminton"
             className="project-img"
           />
