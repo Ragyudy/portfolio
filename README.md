@@ -15,3 +15,4 @@ hii :)
 - make nav links responsive (stays light blue when clicked)
 - add demo reel
 - add links (email, github, linkedin, etc.)
+- fix links to pages (page not found)
