@@ -20,7 +20,7 @@ export function NavBar() {
         <NavigationMenu.List className="navbar-list">
           <NavigationMenu.Item className="navbar-item">
             <NavigationMenu.Link asChild>
-              <Link to="/home" className="navbar-link">
+              <Link to="/" className="navbar-link">
                 Hello
               </Link>
             </NavigationMenu.Link>
@@ -66,7 +66,7 @@ export function NavBar() {
             &times;
           </button>
           <nav className="modal-nav">
-            <Link to="/home" className="modal-link" onClick={closeMenu}>
+            <Link to="/" className="modal-link" onClick={closeMenu}>
               Hello
             </Link>
             <Link to="/about" className="modal-link" onClick={closeMenu}>
