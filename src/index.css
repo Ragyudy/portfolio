@@ -1,68 +1,407 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* ------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------- GENERAL ----------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+body,
+html {
+  width: 100%;
   margin: 0;
+  padding: 0;
+  font-family: "proxima-nova", sans-serif;
+  color: #000;
+  scroll-behavior: smooth;
+}
+
+.home {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  padding: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.home-title {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 800;
+  font-size: 7rem;
+  color: #597cff;
+  margin: 0;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.section-container {
+  color: #333;
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+.section-title {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  color: #333;
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------- NAV ------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  background-color: white;
+  z-index: 10;
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 10px;
+  align-items: center;
+}
+
+.navbar-item {
+  list-style: none;
+}
+
+.navbar-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #333;
+  transition: color 0.3s;
+  font-family: "futura-pt", sans-serif;
+}
+
+.navbar-link:hover {
+  color: #597cff;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 15;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.hamburger-bar {
+  width: 25px;
+  height: 3px;
+  background: #333;
+}
+
+.fullscreen-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.modal-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal-link {
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.modal-link:hover {
+  color: #597cff;
+}
+
+@media (max-width: 767px) {
+  .navbar-list {
+    display: none;
   }
-  a:hover {
-    color: #747bff;
+
+  .hamburger {
+    display: flex;
   }
-  button {
-    background-color: #f9f9f9;
+  .navbar-container {
+    border-bottom: none;
   }
+  .section-container {
+    padding: 100px 65px;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------- ABOUT ----------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+}
+
+.about-description {
+  text-align: left;
+}
+
+.about-description p {
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+}
+
+.about-description a {
+  color: #597cff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d3e7ff;
+}
+
+/* @media (max-width: 1100px) {
+  .about-photo {
+    display: none;
+  }
+  .about-description {
+    flex: 1;
+    padding: 0 20px;
+  }
+} */
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------ PROJECTS --------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+
+.project-row {
+  float: left;
+  margin-bottom: 50px;
+}
+
+.project-img {
+  float: left;
+  text-align: center;
+  width: 350px;
+  height: 225px;
+  object-fit: scale-down;
+}
+
+.project-description {
+  float: right;
+  text-align: left;
+  width: calc(100% - 400px);
+}
+
+.project-description h2 {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  margin: 0;
+}
+
+.project-description a {
+  color: #597cff;
+  text-decoration: none;
+}
+
+.project-description a:hover {
+  color: #d3e7ff;
+}
+
+@media (max-width: 1100px) {
+  .section-title {
+    text-align: center;
+  }
+  .project-row {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    float: none;
+  }
+  .project-img {
+    /* width: 100%; */
+    padding: 20px 0;
+    float: none;
+  }
+  .project-description {
+    padding: 0 20px;
+    width: 100%;
+    float: none;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------- REEL ------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------- FOOTER ---------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+
+.footer {
+  font-family: "futura-pt", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #3f3f3f;
+  color: white;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------ THEME TOGGLE ----------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  position: relative;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.toggle-input {
+  display: none; /* Hide the default checkbox */
+}
+
+.toggle-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.toggle-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- DARK MODE THEME ------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------- */
+
+/* Background Colors */
+body.dark-mode {
+  background-color: #121212;
+}
+
+body.dark-mode .navbar-container {
+  background-color: #121212;
+  border-color: #3f3f3f;
+}
+
+body.dark-mode .fullscreen-modal {
+  background-color: #121212;
+}
+
+body.dark-mode .section-container {
+  background-color: #121212;
+  color: #bfc2ff;
+}
+
+/* Text Colors */
+body.dark-mode .home-title {
+  color: #9ba5ff;
+}
+
+body.dark-mode .section-title,
+body.dark-mode .navbar-link,
+body.dark-mode .modal-link {
+  color: #d8d8d8;
+}
+
+body.dark-mode .navbar-link:hover,
+body.dark-mode .modal-link:hover {
+  color: #597cff;
+}
+
+/* About Section */
+body.dark-mode .about-description {
+  color: #d8d8d8;
+}
+
+body.dark-mode .about-description a {
+  color: #bfc2ff;
+}
+
+body.dark-mode .about-description a:hover {
+  color: #597cff;
+}
+
+/* Projects Section */
+body.dark-mode .project-description {
+  color: #d8d8d8;
+}
+
+body.dark-mode .project-description a:hover {
+  color: #597cff;
+}
+
+/* Theme Toggle */
+body.dark-mode .toggle-icon {
+  color: #d8d8d8;
+}
+
+body.dark-mode .hamburger-bar {
+  background-color: #bfc2ff;
+}
+
+body.dark-mode .close-modal {
+  color: #bfc2ff;
 }
