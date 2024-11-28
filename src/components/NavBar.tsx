@@ -2,16 +2,30 @@ import { Link } from "react-router-dom";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { ThemeToggle } from "./ThemeToggle";
 import { useState } from "react";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    if (isOpen) {
+      setIsClosing(true);
+      setTimeout(() => {
+        setIsOpen(false);
+        setIsClosing(false);
+      }, 300);
+    } else {
+      setIsOpen(true);
+    }
   };
 
   const closeMenu = () => {
-    setIsOpen(false);
+    setIsClosing(true);
+    setTimeout(() => {
+      setIsOpen(false);
+      setIsClosing(false);
+    }, 300);
   };
 
   return (
@@ -61,7 +75,7 @@ export function NavBar() {
       </button>
 
       {isOpen && (
-        <div className="fullscreen-modal">
+        <div className={`fullscreen-modal ${isClosing ? "closing" : ""}`}>
           <button className="close-modal" onClick={closeMenu}>
             &times;
           </button>
@@ -80,6 +94,29 @@ export function NavBar() {
             </Link>
             <ThemeToggle />
           </nav>
+          <div className="social-links">
+            <a
+              href="mailto:grady.yu@yale.edu"
+              className="social-link"
+              rel="noopener noreferrer"
+            >
+              <FaEnvelope />
+            </a>
+            <a
+              href="https://github.com/Ragyudy"
+              className="social-link"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://linkedin.com/in/gradyyu"
+              className="social-link"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin />
+            </a>
+          </div>
         </div>
       )}
     </div>
