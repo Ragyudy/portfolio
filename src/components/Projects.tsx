@@ -9,12 +9,12 @@ export function Projects() {
         Projects
       </div>
       <div className="project-row">
-        <a href="https://yaleclubs.info">
+        <a href="https://yaleclubs.info" target="_blank">
           <img src={yaleClubsImg} alt="Yale Clubs" className="project-img" />
         </a>
         <div className="project-description">
-          <a href="https://yaleclubs.info">
-            <h2>Yale Clubs</h2>
+          <a href="https://yaleclubs.info" target="_blank">
+            <h2>YaleClubs</h2>
           </a>
           <p>
             A website designed to help Yale students easily explore and discover
@@ -25,17 +25,21 @@ export function Projects() {
             and engagement at Yale.
           </p>
           <p>
-            I am one of six engineers on the Yale Clubs team. We got together in
-            late October / early November and are planning to deploy v0.1 by
-            Dec. 2, 2024! My contributions were in developing a web scraper for
-            gathering club details, implementing a feedback mechanism, and
-            creating dynamic UI components to enhance user experience.
+            I am one of six developers on the YaleClubs team. We recently
+            deployed our beta version, but expect many features to be dropping
+            in the coming weeks :). My contributions were in developing a web
+            scraper for gathering club details, uploading the data onto the
+            database, and creating dynamic UI components to enhance the user
+            experience.
           </p>
         </div>
       </div>
 
       <div className="project-row">
-        <a href="https://github.com/Ragyudy/handsome-dan-tracker">
+        <a
+          href="https://github.com/Ragyudy/handsome-dan-tracker"
+          target="_blank"
+        >
           <img
             src={handsomeDanImg}
             alt="Handsome Dan Tracker"
@@ -44,7 +48,10 @@ export function Projects() {
         </a>
         <div className="project-description">
           <h2>
-            <a href="https://github.com/Ragyudy/handsome-dan-tracker">
+            <a
+              href="https://github.com/Ragyudy/handsome-dan-tracker"
+              target="_blank"
+            >
               Handsome Dan Tracker
             </a>
           </h2>
@@ -60,12 +67,11 @@ export function Projects() {
           </p>
           <p>
             I'm currently working on this passion project with three other
-            friends. My contributions were in integrating map display APIs,
+            friends. My contributions were in integrating a map display API,
             designing the "dog feed" user interface for photo sharing, and
             supporting the development of a custom machine learning model for
-            Handsome Dan recognition. I'm currently working on implementing
-            Firebase integration to enable real-time data storage and user
-            interactions.
+            detecting Handsome Dan. We're planning to release the app on the App
+            Store soon!
           </p>
         </div>
       </div>
@@ -92,7 +98,7 @@ export function Projects() {
         </div>
       </div> */}
       <div className="project-row">
-        <a href="https://yalebadminton.com">
+        <a href="https://yalebadminton.com" target="_blank">
           <img
             src={yaleBadmintonImg}
             alt="Yale Badminton"
@@ -102,7 +108,9 @@ export function Projects() {
 
         <div className="project-description">
           <h2>
-            <a href="https://yalebadminton.com">Yale Badminton</a>
+            <a href="https://yalebadminton.com" target="_blank">
+              Yale Badminton
+            </a>
           </h2>
           <p>
             The official website for the Yale Club Badminton team. I built this
