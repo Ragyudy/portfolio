@@ -1,5 +1,5 @@
 import yaleClubsImg from "../assets/projects/img/yaleclubs.png";
-import handsomeDanImg from "../assets/projects/img/handsomedan.png";
+// import handsomeDanImg from "../assets/projects/img/handsomedan.png";
 import yaleBadmintonImg from "../assets/projects/img/yalebadminton.png";
 
 export function Projects() {
@@ -29,13 +29,12 @@ export function Projects() {
             deployed our beta version, but expect many features to be dropping
             in the coming weeks :). My contributions were in developing a web
             scraper for gathering club details, uploading the data onto the
-            database, and creating dynamic UI components to enhance the user
-            experience.
+            database, and creating dynamic UI components.
           </p>
         </div>
       </div>
 
-      <div className="project-row">
+      {/* <div className="project-row">
         <a
           href="https://github.com/Ragyudy/handsome-dan-tracker"
           target="_blank"
@@ -70,11 +69,10 @@ export function Projects() {
             friends. My contributions were in integrating a map display API,
             designing the "dog feed" user interface for photo sharing, and
             supporting the development of a custom machine learning model for
-            detecting Handsome Dan. We're planning to release the app on the App
-            Store soon!
+            detecting Handsome Dan.
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* <div className="project-row">
         <a href="https://github.com/Ragyudy/loan-amortization-app">
@@ -113,12 +111,15 @@ export function Projects() {
             </a>
           </h2>
           <p>
-            The official website for the Yale Club Badminton team. I built this
-            earlier in the semester to help the team recruit new members and
-            update our
-            <a href="https://badminton.sites.yale.edu/"> old website</a>.
-            Unfortunately, I haven't had time to update it since then, but I'm
-            in the process of adding new features and updating the design.
+            The new official website for Yale Club Badminton, which is an
+            updated version of our
+            <a href="https://badminton.sites.yale.edu/" target="_blank">
+              {" "}
+              old website
+            </a>{" "}
+            . It features a really cool gallery page of some of our fondest
+            memories together :) Feel free to check it out and learn more about
+            our team!
           </p>
         </div>
       </div>

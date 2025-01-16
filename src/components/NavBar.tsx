@@ -53,13 +53,13 @@ export function NavBar() {
               </Link>
             </NavigationMenu.Link>
           </NavigationMenu.Item>
-          <NavigationMenu.Item className="navbar-item">
+          {/* <NavigationMenu.Item className="navbar-item">
             <NavigationMenu.Link asChild>
               <Link to="/reel" className="navbar-link">
                 Reel
               </Link>
             </NavigationMenu.Link>
-          </NavigationMenu.Item>
+          </NavigationMenu.Item> */}
           <NavigationMenu.Item className="navbar-item">
             <NavigationMenu.Link className="navbar-link">
               <ThemeToggle />
@@ -89,9 +89,9 @@ export function NavBar() {
             <Link to="/projects" className="modal-link" onClick={closeMenu}>
               Projects
             </Link>
-            <Link to="/reel" className="modal-link" onClick={closeMenu}>
+            {/* <Link to="/reel" className="modal-link" onClick={closeMenu}>
               Reel
-            </Link>
+            </Link> */}
             <ThemeToggle />
           </nav>
           <div className="social-links">

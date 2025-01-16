@@ -6,10 +6,7 @@ export function About() {
         <div className="about-description">
           <p>
             Hi, my name is Grady. I was born and raised in NYC and am currently
-            studying Computer Science at Yale. I'm a student researcher at the{" "}
-            <a href="https://vision.cs.yale.edu/">Yale Vision Laboratory</a>,
-            where I'm learning about all-weather image removal techniques. As a
-            developer, I contribute to{" "}
+            studying Computer Science at Yale. As a developer, I contribute to{" "}
             <a href="https://yaleclubs.info/">Yale Clubs</a> and{" "}
             <a href="https://yalecomputersociety.org/products/roomadvisor">
               RoomAdvisor
