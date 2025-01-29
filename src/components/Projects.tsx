@@ -17,19 +17,17 @@ export function Projects() {
             <h2>YaleClubs</h2>
           </a>
           <p>
-            A website designed to help Yale students easily explore and discover
-            over 1,000 student groups and organizations on campus. The platform
-            provides a centralized, searchable database of student clubs,
-            allowing students to quickly find and connect with groups that match
-            their interests. We aim to simplify student organization discovery
-            and engagement at Yale.
+            A website to help Yale students easily explore and discover over
+            1,000 student groups and organizations on campus. The platform
+            provides a centralized database of student clubs, allowing students
+            to quickly find and connect with groups that match their interests.
+            Beta released on December 2024, a month after starting development
+            from scratch.
           </p>
           <p>
-            I am one of six developers on the YaleClubs team. We recently
-            deployed our beta version, but expect many features to be dropping
-            in the coming weeks :). My contributions were in developing a web
-            scraper for gathering club details, uploading the data onto the
-            database, and creating dynamic UI components.
+            On project from November 2024 to present. My contributions were in
+            developing a web scraper for gathering club details, uploading
+            initial data onto the database, and creating dynamic UI components.
           </p>
         </div>
       </div>
@@ -116,10 +114,8 @@ export function Projects() {
             <a href="https://badminton.sites.yale.edu/" target="_blank">
               {" "}
               old website
-            </a>{" "}
-            . It features a really cool gallery page of some of our fondest
-            memories together :) Feel free to check it out and learn more about
-            our team!
+            </a>
+            .
           </p>
         </div>
       </div>

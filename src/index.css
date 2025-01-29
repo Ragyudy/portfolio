@@ -97,6 +97,7 @@ a:hover {
   background-color: white;
   z-index: 10;
   padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .navbar-list {
@@ -123,89 +124,6 @@ a:hover {
   color: #597cff;
 }
 
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 15;
-}
-
-.hamburger-bar {
-  width: 25px;
-  height: 3px;
-  background: #333;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-.fullscreen-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 20;
-  animation: fadeIn 0.3s ease forwards;
-}
-
-.fullscreen-modal.closing {
-  animation: fadeOut 0.3s ease forwards;
-}
-
-.close-modal {
-  position: absolute;
-  top: 4px;
-  right: 17px;
-  background: none;
-  border: none;
-  font-size: 3rem;
-  cursor: pointer;
-}
-
-.modal-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.modal-link {
-  font-size: 1.5rem;
-  color: #333;
-  text-decoration: none;
-}
-
-.modal-link:hover {
-  color: #597cff;
-}
-
 /* ------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------- ABOUT ----------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------- */
@@ -222,9 +140,19 @@ a:hover {
   text-align: left;
 }
 
+.about-description ul {
+  margin-top: 10px;
+}
+
 .about-description p {
   margin: 0 0 10px 0;
   font-size: 1.1rem;
+}
+
+.about-description h1 {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -266,13 +194,8 @@ a:hover {
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
-/* ------------------------------------------------- REEL ------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------- FOOTER ---------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------- */
-
 .footer {
   font-family: "futura-pt", sans-serif;
   display: flex;
@@ -362,7 +285,8 @@ body.dark-mode .home-title {
 
 body.dark-mode .section-title,
 body.dark-mode .navbar-link,
-body.dark-mode .modal-link {
+body.dark-mode .modal-link,
+body.dark-mode .about-description h1 {
   color: #d8d8d8;
 }
 
@@ -422,9 +346,6 @@ body.dark-mode .close-modal {
   .section-container {
     padding: 100px 100px;
   }
-  .section-title {
-    text-align: center;
-  }
   .project-row {
     display: flex;
     flex-direction: column;
@@ -451,10 +372,6 @@ body.dark-mode .close-modal {
   .section-container {
     padding: 100px 20px;
   }
-  .navbar-list {
-    display: none;
-  }
-
   .hamburger {
     display: flex;
   }
@@ -464,6 +381,19 @@ body.dark-mode .close-modal {
 }
 
 @media (max-width: 600px) {
+  .navbar-link {
+    font-size: 1rem;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .about-description p {
+    font-size: 1rem;
+  }
+  .about-description h1 {
+    font-size: 1.6rem;
+  }
   .home-title {
     font-size: 5rem;
   }
