@@ -15,14 +15,14 @@ export function Home() {
         <a
           href="https://github.com/Ragyudy"
           className="social-link home-link"
-          rel="noopener noreferrer"
+          target="_blank"
         >
           <FaGithub />
         </a>
         <a
           href="https://linkedin.com/in/gradyyu"
           className="social-link home-link"
-          rel="noopener noreferrer"
+          target="_blank"
         >
           <FaLinkedin />
         </a>

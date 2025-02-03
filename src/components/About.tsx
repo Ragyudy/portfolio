@@ -5,45 +5,20 @@ export function About() {
       <div className="about-content">
         <div className="about-description">
           <p>
-            Hi, my name is Grady. I was born and raised in NYC and am currently
-            studying Computer Science at{" "}
+            Hi, I'm Grady! I'm a sophomore at{" "}
             <a href="https://www.yale.edu/" target="_blank">
               Yale
-            </a>
-            . As a member of the{" "}
-            <a href="https://yalecomputersociety.org/" target="_blank">
-              Yale Computer Society
-            </a>
-            , I have worked on various projects, including{" "}
-            <a href="https://yaleclubs.info/" target="_blank">
-              YaleClubs
             </a>{" "}
-            and{" "}
-            <a
-              href="https://yalecomputersociety.org/products/roomadvisor"
-              target="_blank"
-            >
-              RoomAdvisor
-            </a>
-            . I've also helped organize{" "}
-            <a href="https://yhack.org/" target="_blank">
-              YHack
-            </a>
-            , Yale's largest annual hackathon, for both Spring and Fall 2024. I
-            am currently working on a new mobile app for the{" "}
-            <a href="https://yaledailynews.com" target="_blank">
-              Yale Daily News
-            </a>
-            .
+            studying Computer Science.
           </p>
           <p>
             I love learning and am always excited for new opportunities to
-            expand my technical expertise. My current areas of interest are in
+            expand my technical expertise. I'm particularly interested in
             full-stack development, machine learning, and computer graphics.
           </p>
           <p>
             I enjoy teaching as much as I do learning! I'm currently a teaching
-            assistant for CS 201 (Introduction to Computer Science) at Yale.
+            assistant for CS 201 (Introduction to Computer Science).
           </p>
           <p>
             Here are some things I like:
