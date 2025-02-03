@@ -149,10 +149,13 @@ a:hover {
   font-size: 1.1rem;
 }
 
-.about-description h1 {
+.about-contact {
   font-family: "futura-pt", sans-serif;
   font-weight: 600;
   margin-bottom: 10px;
+  margin-top: 20px;
+  color: #333;
+  font-size: 2rem;
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -286,7 +289,7 @@ body.dark-mode .home-title {
 body.dark-mode .section-title,
 body.dark-mode .navbar-link,
 body.dark-mode .modal-link,
-body.dark-mode .about-description h1 {
+body.dark-mode .about-contact {
   color: #d8d8d8;
 }
 
@@ -391,7 +394,7 @@ body.dark-mode .close-modal {
   .about-description p {
     font-size: 1rem;
   }
-  .about-description h1 {
+  .about-contact {
     font-size: 1.6rem;
   }
   .home-title {

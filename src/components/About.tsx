@@ -61,7 +61,7 @@ export function About() {
               </li>
             </ul>
           </p>
-          <h1>Contact</h1>
+          <div className="about-contact">Contact</div>
           <p>
             Email:{" "}
             <a href="mailto:grady.yu@yale.edu" rel="noopener noreferrer">
