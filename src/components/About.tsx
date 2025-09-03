@@ -18,12 +18,29 @@ export function About() {
           </p>
           <p>
             I enjoy teaching as much as I do learning! I have been a teaching
-            assistant for CS 201 (Introduction to Computer Science) since Fall
+            assistant for CPSC 2010: Introduction to Computer Science since Fall
             '24.
           </p>
           <p>
             Here are some things I like:
             <ul>
+              <li>
+                Taking photos, usually of sunsets, squirrels, or dining hall
+                food on really good days
+              </li>
+              <li>
+                Learning new songs on the{" "}
+                <a
+                  href="https://youtube.com/playlist?list=PLbsdrtjSEs7ctZ658lrIrapcu4d6kq9fQ&si=hdBrzmz20z_XItKc"
+                  target="_blank"
+                >
+                  guitar
+                </a>{" "}
+              </li>
+
+              <li>
+                Animated films: Spirited Away, The Good Dinosaur, and WALL-E
+              </li>
               <li>
                 Sports, especially {""}
                 <a
@@ -40,26 +57,9 @@ export function About() {
                   swimming
                 </a>
               </li>
-              <li>
-                Learning new songs on the guitar (you can watch some of my
-                covers{" "}
-                <a
-                  href="https://youtube.com/playlist?list=PLbsdrtjSEs7ctZ658lrIrapcu4d6kq9fQ&si=hdBrzmz20z_XItKc"
-                  target="_blank"
-                >
-                  here
-                </a>
-                !)
-              </li>
-              <li>
-                Taking photos, usually of sunsets, squirrels, or dining hall
-                food on really good days
-              </li>
               <li>Food</li>
               <li>Nature</li>
-              <li>
-                Animated films: Spirited Away, The Good Dinosaur, and WALL-E
-              </li>
+              <li>Hiking</li>
             </ul>
           </p>
           <div className="about-contact">Contact</div>
