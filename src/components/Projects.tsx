@@ -1,5 +1,5 @@
 import yaleClubsImg from "../assets/projects/img/yaleclubs.png";
-// import handsomeDanImg from "../assets/projects/img/handsomedan.png";
+import handsomeDanImg from "../assets/projects/img/handsomedan.png";
 import yaleBadmintonImg from "../assets/projects/img/yalebadminton.png";
 
 export function Projects() {
@@ -24,15 +24,10 @@ export function Projects() {
             Beta released on December 2024, a month after starting development
             from scratch.
           </p>
-          <p>
-            On project from November 2024 to present. My contributions were in
-            developing a web scraper for gathering club details, uploading
-            initial data onto the database, and creating dynamic UI components.
-          </p>
         </div>
       </div>
 
-      {/* <div className="project-row">
+      <div className="project-row">
         <a
           href="https://github.com/Ragyudy/handsome-dan-tracker"
           target="_blank"
@@ -54,45 +49,20 @@ export function Projects() {
           </h2>
           <p>
             An iOS application that allows Yale students to track, share, and
-            celebrate sightings of Handsome Dan, Yale's beloved bulldog mascot.
-            The app combines real-time photo sharing, location tracking, and
-            machine learning to create an interactive platform for capturing and
-            documenting Handsome Dan's campus adventures. We aim to build
-            community engagement by creating a playful, interactive way for Yale
-            community members to connect through their shared love of the
-            university's iconic mascot.
-          </p>
-          <p>
-            I'm currently working on this passion project with three other
-            friends. My contributions were in integrating a map display API,
-            designing the "dog feed" user interface for photo sharing, and
-            supporting the development of a custom machine learning model for
-            detecting Handsome Dan.
+            celebrate sightings of{" "}
+            <a
+              href="https://www.instagram.com/handsomedanyale/?hl=en"
+              target="_blank"
+            >
+              Handsome Dan XIX
+            </a>
+            , our bulldog mascot. The app combines real-time photo sharing,
+            location tracking, and machine learning to create an interactive
+            platform for capturing and documenting Handsome Dan's campus
+            adventures.
           </p>
         </div>
-      </div> */}
-
-      {/* <div className="project-row">
-        <a href="https://github.com/Ragyudy/loan-amortization-app">
-          <img
-            src="src/assets/projects/gif/amortizr_high.gif"
-            alt="Amortizr"
-            className="project-img"
-          />
-        </a>
-        <div className="project-description">
-          <a href="https://github.com/Ragyudy/loan-amortization-app">
-            <h2>Amortizr</h2>
-          </a>
-          <p>
-            A website that allows users to calculate and view their loan
-            amortization schedule. Users can create a new user, create loans,
-            view their loans, update a loan, and fetch their loan amortization
-            schedules and summaries. Built with React Typescript. Styled with
-            Bootstrap, React Text Gradients, and Animate on scroll (AOS).
-          </p>
-        </div>
-      </div> */}
+      </div>
       <div className="project-row">
         <a href="https://yalebadminton.com" target="_blank">
           <img
@@ -115,7 +85,9 @@ export function Projects() {
               {" "}
               old website
             </a>
-            .
+            . It's not very pretty right now, but hopefully I get some good
+            ideas on how to improve it in a graphic design class I'm taking this
+            semester :').
           </p>
         </div>
       </div>

@@ -5,7 +5,7 @@ export function About() {
       <div className="about-content">
         <div className="about-description">
           <p>
-            Hi, I'm Grady! I'm a sophomore at{" "}
+            Hi, I'm Grady! I'm a Junior at{" "}
             <a href="https://www.yale.edu/" target="_blank">
               Yale
             </a>{" "}
@@ -17,8 +17,9 @@ export function About() {
             full-stack development, machine learning, and computer graphics.
           </p>
           <p>
-            I enjoy teaching as much as I do learning! I'm currently a teaching
-            assistant for CS 201 (Introduction to Computer Science).
+            I enjoy teaching as much as I do learning! I have been a teaching
+            assistant for CS 201 (Introduction to Computer Science) since Fall
+            '24.
           </p>
           <p>
             Here are some things I like:
