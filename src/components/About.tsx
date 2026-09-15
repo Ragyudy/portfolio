@@ -5,7 +5,7 @@ export function About() {
       <div className="about-content">
         <div className="about-description">
           <p>
-            Hi, I'm Grady! I'm a Junior at{" "}
+            I'm a senior at{" "}
             <a href="https://www.yale.edu/" target="_blank">
               Yale
             </a>{" "}
@@ -63,12 +63,7 @@ export function About() {
             </ul>
           </p>
           <div className="about-contact">Contact</div>
-          <p>
-            Email:{" "}
-            <a href="mailto:grady.yu@yale.edu" rel="noopener noreferrer">
-              grady.yu@yale.edu
-            </a>
-          </p>
+          <p>Email: grady (dot) yu (at) yale.edu</p>
           <p>
             LinkedIn:{" "}
             <a href="https://www.linkedin.com/in/gradyyu/" target="_blank">

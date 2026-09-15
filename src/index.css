@@ -164,7 +164,7 @@ a:hover {
 
 .project-row {
   float: left;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .project-img {
@@ -173,6 +173,43 @@ a:hover {
   width: 350px;
   height: 225px;
   object-fit: scale-down;
+}
+
+.badminton-logo {
+  display: block;
+  position: relative;
+}
+
+.badminton-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  transition: opacity 0.15s ease;
+}
+
+.badminton-dark,
+.badminton-hover {
+  opacity: 0;
+}
+
+body.dark-mode .badminton-light {
+  opacity: 0;
+}
+
+body.dark-mode .badminton-dark {
+  opacity: 1;
+}
+
+.badminton-logo:hover .badminton-light,
+.badminton-logo:hover .badminton-dark {
+  opacity: 0;
+}
+
+.badminton-logo:hover .badminton-hover {
+  opacity: 1;
 }
 
 .project-description {
@@ -358,11 +395,17 @@ body.dark-mode .close-modal {
     float: none;
     margin: 0;
   }
+  .project-row:last-child {
+    border-bottom: none;
+  }
   .project-img {
     padding: 20px 0;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 220px;
     float: none;
+  }
+  .badminton-logo {
+    aspect-ratio: 279.95 / 525.75;
   }
   .project-description {
     /* padding: 0 20px; */

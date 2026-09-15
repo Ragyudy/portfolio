@@ -1,6 +1,7 @@
-import yaleClubsImg from "../assets/projects/img/yaleclubs.png";
-import handsomeDanImg from "../assets/projects/img/handsomedan.png";
-import yaleBadmintonImg from "../assets/projects/img/yalebadminton.png";
+import yaleClubsImg from "../assets/projects/img/yaleclubs.svg";
+import yaleBadmintonLight from "../assets/projects/img/yalebadminton_light.svg";
+import yaleBadmintonDark from "../assets/projects/img/yalebadminton_dark.svg";
+import yaleBadmintonHover from "../assets/projects/img/yalebadminton_hover.svg";
 
 export function Projects() {
   return (
@@ -9,11 +10,11 @@ export function Projects() {
         Projects
       </div>
       <div className="project-row">
-        <a href="https://yaleclubs.info" target="_blank">
+        <a href="https://yaleclubs.io" target="_blank">
           <img src={yaleClubsImg} alt="Yale Clubs" className="project-img" />
         </a>
         <div className="project-description">
-          <a href="https://yaleclubs.info" target="_blank">
+          <a href="https://yaleclubs.io" target="_blank">
             <h2>YaleClubs</h2>
           </a>
           <p>
@@ -26,68 +27,45 @@ export function Projects() {
           </p>
         </div>
       </div>
-
       <div className="project-row">
         <a
-          href="https://github.com/Ragyudy/handsome-dan-tracker"
+          href="https://yalebadminton.com/gallery"
           target="_blank"
+          className="project-img badminton-logo"
         >
           <img
-            src={handsomeDanImg}
-            alt="Handsome Dan Tracker"
-            className="project-img"
-          />
-        </a>
-        <div className="project-description">
-          <h2>
-            <a
-              href="https://github.com/Ragyudy/handsome-dan-tracker"
-              target="_blank"
-            >
-              Handsome Dan Tracker
-            </a>
-          </h2>
-          <p>
-            An iOS application that allows Yale students to track, share, and
-            celebrate sightings of{" "}
-            <a
-              href="https://www.instagram.com/handsomedanyale/?hl=en"
-              target="_blank"
-            >
-              Handsome Dan XIX
-            </a>
-            , our bulldog mascot. The app combines real-time photo sharing,
-            location tracking, and machine learning to create an interactive
-            platform for capturing and documenting Handsome Dan's campus
-            adventures.
-          </p>
-        </div>
-      </div>
-      <div className="project-row">
-        <a href="https://yalebadminton.com" target="_blank">
-          <img
-            src={yaleBadmintonImg}
+            src={yaleBadmintonLight}
             alt="Yale Badminton"
-            className="project-img"
+            className="badminton-img badminton-light"
+          />
+          <img
+            src={yaleBadmintonDark}
+            alt=""
+            aria-hidden="true"
+            className="badminton-img badminton-dark"
+          />
+          <img
+            src={yaleBadmintonHover}
+            alt=""
+            aria-hidden="true"
+            className="badminton-img badminton-hover"
           />
         </a>
 
         <div className="project-description">
           <h2>
-            <a href="https://yalebadminton.com" target="_blank">
+            <a href="https://yalebadminton.com/gallery" target="_blank">
               Yale Badminton
             </a>
           </h2>
           <p>
-            The new official website for Yale Club Badminton, which is an
-            updated version of our
+            A more modern alternative to our
             <a href="https://badminton.sites.yale.edu/" target="_blank">
               {" "}
               old website
             </a>
-            . It's not very pretty right now, but hopefully I get some good
-            ideas on how to improve it in a graphic design class I'm taking this
-            semester :').
+            . It's outdated now, but this was where I shared some fond memories
+            I shared with the team while I was captain.
           </p>
         </div>
       </div>
