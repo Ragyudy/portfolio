@@ -64,8 +64,8 @@ export function Projects() {
               {" "}
               old website
             </a>
-            . It's outdated now, but this was where I shared some fond memories
-            I shared with the team while I was captain.
+            . It's outdated now, but this was where I used to share photos from
+            our team's social events and tournaments. 
           </p>
         </div>
       </div>

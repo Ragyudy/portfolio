@@ -63,7 +63,7 @@ export function About() {
             </ul>
           </p>
           <div className="about-contact">Contact</div>
-          <p>Email: grady (dot) yu (at) yale.edu</p>
+          <p>Email: grady (dot) yu (at) yale (dot) edu</p>
           <p>
             LinkedIn:{" "}
             <a href="https://www.linkedin.com/in/gradyyu/" target="_blank">
