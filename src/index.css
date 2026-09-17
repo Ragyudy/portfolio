@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #faf9f6;
+}
+
 a {
   color: #597cff;
   text-decoration: none;
@@ -94,7 +98,7 @@ a:hover {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color: #faf9f6;
   z-index: 10;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -165,6 +169,10 @@ a:hover {
 .project-row {
   float: left;
   margin-bottom: 100px;
+}
+
+.section-title + .project-row {
+  margin-top: 40px;
 }
 
 .project-img {
@@ -394,6 +402,9 @@ body.dark-mode .close-modal {
     width: 100%;
     float: none;
     margin: 0;
+  }
+  .section-title + .project-row {
+    margin-top: 0;
   }
   .project-row:last-child {
     border-bottom: none;
